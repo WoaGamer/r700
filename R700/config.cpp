@@ -122,12 +122,14 @@ class cfgWeapons
 			dispersion=0.0015;
 			magazineSlot="magazine";
 		};
-		class OpticsInfo: OpticsInfoRifle
-		{
-			modelOptics="-";
-			distanceZoomMin=100;
-			distanceZoomMax=100;
-		};
+               class OpticsInfo: OpticsInfoRifle
+               {
+                       memoryPointCamera="eye"; // camera anchor point
+                       cameraDir="cameraDir"; // camera direction
+                       modelOptics="-"; // disable optic model
+                       distanceZoomMin=100; // minimum zoom distance
+                       distanceZoomMax=100; // maximum zoom distance
+               };
 		class InventorySlotsOffsets
 		{
 			class Shoulder
